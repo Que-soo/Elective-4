@@ -1,0 +1,48 @@
+{
+  "test_accuracy": 0.7534668721109399,
+  "test_macro_f1": 0.6200628558270672,
+  "majority_baseline": {
+    "label": "Negative",
+    "accuracy": 0.487673343605547
+  },
+  "subsets": [
+    {
+      "subset": "All test reviews",
+      "n": 1298,
+      "accuracy": 0.7534668721109399,
+      "macro_f1": 0.6200628558270672
+    },
+    {
+      "subset": "Text never seen in training",
+      "n": 1154,
+      "accuracy": 0.7322357019064125,
+      "macro_f1": 0.6061765329579496
+    },
+    {
+      "subset": "Text also in training set",
+      "n": 144,
+      "accuracy": 0.9236111111111112,
+      "macro_f1": 0.701984126984127
+    },
+    {
+      "subset": "Short (< 3 words)",
+      "n": 215,
+      "accuracy": 0.8976744186046511,
+      "macro_f1": 0.6652869737380113
+    },
+    {
+      "subset": "Longer (3+ words)",
+      "n": 1083,
+      "accuracy": 0.7248384118190212,
+      "macro_f1": 0.6033054965606953
+    }
+  ],
+  "error_pairs": {
+    "Negative->Neutral": 92,
+    "Neutral->Negative": 86,
+    "Positive->Negative": 73,
+    "Positive->Neutral": 37,
+    "Negative->Positive": 21,
+    "Neutral->Positive": 11
+  }
+}
